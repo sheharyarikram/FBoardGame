@@ -23,7 +23,7 @@
 * move_x - takes as parameters the row and column of the square to move to.  If the desired move is not allowed, or if the game has already been won, it should just return False.  Otherwise it should make the move and return True.  A piece belonging to x can move 1 square diagonally in any direction.  A piece is not allowed to move off the board or to an occupied square.  If x's move gets her piece to square (7,7), game_state should be set to "X_WON".
 * move_o - takes as parameters the row and column to move from, and the row and column to move to.  If the first pair of coordinates doesn't hold o's piece, or if the desired move is not allowed, or if the game has already been won, it should just return False.  Othewise it should make the move and return True.  A piece belonging to o can move 1 square diagonally, **but the row and column cannot both increase**, so any o piece has at most three available moves.  For example, if player o has a piece at (5, 1), it could move to (4, 0), (4, 2), or (6,0), but not to (6, 2).  It is not allowed to move off the board or to an occupied square.  If o's move leaves no legal move for x, game_state should be set to "O_WON".
 
-Either move method can be called multiple times in a row.
+** Either move method can be called multiple times in a row. **
 
 Here's a very simple example of how the class could be used:
 ```
